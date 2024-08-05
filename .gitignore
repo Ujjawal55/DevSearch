@@ -1,1 +1,4 @@
 .env
+Pipfile.lock
+Pipfile
+.project_django/

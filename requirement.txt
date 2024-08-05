@@ -1,5 +1,0 @@
- pip install pillow
- pip install whitenoise
- pip install python-dotenv
- pip install djangorestframework
-
