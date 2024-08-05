@@ -1,0 +1,12 @@
+{
+  "include": ["src"],
+  "exclude": ["**/node_modules", "**/__pycache__"],
+  "reportUnusedVariable": "none",
+  "venvPath": "/homoe/ujjawal/.virtualenvs",
+  "venv": "project_django",
+  "pythonVersion": "3.12",
+  "pythonPlatform": "Linux",
+  "typeCheckingMode": "basic",
+  "autoSearchPaths": true,
+  "useLibraryCodeForTypes": true
+}

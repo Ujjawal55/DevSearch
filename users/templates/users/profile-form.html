@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block content %}
+
+<form method="POST" action="{% url 'edit-account' %}" , enctype="multipart/form-data">
+  {% csrf_token %}
+  <h1>Edit Account</h1>
+
+  <main class="formPage my-xl">
+    <div class="content-box">
+      <div class="formWrapper">
+        <a class="backButton" href="{% url 'account' %}"><i class="im im-angle-left"></i></a>
+        <br>
+        <form class="form" method="POST">
+          <!-- Input:Text -->
+          {% for field in form %}
+          <div class="form__field">
+            <label for="formInput#text">{{field.label}}</label>
+          </div>
+          {{field}}
+          {% endfor %}
+          <br>
+          <input class="btn btn--sub btn--lg  my-md" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </main>
+
+</form>
+
+
+
+{% endblock content %}
